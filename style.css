@@ -1,7 +1,14 @@
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+   
+    background-color: black;
+    color: white;
 }
 
 .main{
@@ -15,13 +22,11 @@
     width: 100vw;
     background-size:max(1200px, 100vw);
 }
-.main .box {
-    height: 100vh;
-    width: 100vw;
-    opacity: 0.66;
-    background-color: black;
+.main .box{
     position: absolute;
-    top: 0;
+    inset: 0;
+      opacity: 0.66;
+    background-color: black;
 }
 nav{
     margin: 0 auto;
@@ -30,6 +35,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 62px;
+    
 }
 nav img{
     color: red;
@@ -50,22 +56,213 @@ nav button{
     flex-direction: column;
     color: white;
     position: relative;
-    spacing: 20px;
+    margin:  0px;
 }    
-.input{
-    width: 400px;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
+.h{
+   width: 300px;
+    height: 45px;
+    font-size: 18px;
     padding-left: 10px;
-    spacing: 10px;
-}
-.hh{
-    font-size: 40px;
-    font-weight: 900;
-}
-#hh:hover{
-    background-color: red;
+    background-color: black;
     color: white;
     
+}
+.hh{
+   font-weight: 900;
+ font-size: 70px;
+  text-align: center;
+ 
+
+
+}
+
+.hu{
+margin-bottom: 22px;
+font-weight: 900;
+font-size: larger;
+
+}
+.hy{
+    margin-bottom: 22px;
+    font-size: larger;
+}
+#hh{
+background-color: red;
+ width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    padding: 0px;
+    font-weight: bold;
+    
+
+}
+
+.btn{
+    background-color: red;
+font-family: Arial, Helvetica, sans-serif;
+height: 50px;
+width: 150px;
+ border-radius: 8px;
+ font-weight: 900;
+ color: white;
+ 
+}
+.trending{
+    margin-top: 50px;
+    padding: 0 200px;
+    
+   
+}
+
+.yy{
+    padding: 20px 0;
+    margin-left: 290px;  
+    
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+    margin-left: 290px;  
+   
+}
+
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    
+    width: 180px;
+    height: 260px;
+    position: relative;
+    margin-top: 20px;
+    flex: 0 0 auto;
+    width: 180px;
+    height: 260px;
+    position: relative;
+  
+
+    
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+       transition: 0.7s;
+}
+
+.card:hover{
+    transform: scale(1.08);
+}
+
+.number{
+    position: absolute;
+    left: -18px;
+    bottom: -10px;
+    font-size: 90px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    font-family: Arial, sans-serif;
+}
+.papp{
+    display: flex;
+    gap: 40px;
+    margin-left: 490px;
+    
+}
+
+.one{
+    width: 230px;
+    height: 250px;
+    border-radius: 14px;
+    background: linear-gradient(135deg,#1b1d3a,#210d19);
+    margin-top: 20px;
+}
+.l{
+    margin-left: 490px;
+    margin-top: 20px;
+}
+.one h2{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: 900;
+}
+
+.one p{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: lighter;
+}
+.on{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 50px;
+    color: #ff0055;
+}
+.faq{
+    background:#000;
+    padding:70px 0;
+}
+
+.faq h1{
+    font-size:50px;
+    font-weight:700;
+}
+
+.accordion-item{
+    border:none;
+    margin-bottom:8px;
+    background:#2d2d2d;
+}
+
+.accordion-button{
+    background:#2d2d2d !important;
+    color:#fff !important;
+    font-size:24px;
+    font-weight:500;
+    padding:25px;
+}
+
+.accordion-button:not(.collapsed){
+    background:#2d2d2d !important;
+    color:#fff !important;
+    box-shadow:none;
+}
+
+.accordion-button:hover{
+    background:#414141 !important;
+}
+
+.accordion-body{
+    background:#2d2d2d;
+    color:white;
+    font-size:22px;
+    line-height:1.6;
+    padding:25px;
+}
+
+.accordion-button::after{
+    filter:brightness(0) invert(1);
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+}
+footer{
+    margin-top: 100px;
+    text-align: center;
+    padding: 35px;
+    background-color: #2e2e2e;
+    color: aliceblue;
+   
+
 }
