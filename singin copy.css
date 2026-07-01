@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+   
+    
+    background: linear-gradient(to bottom, #410000,#000,#000);
+}
+
+nav{
+    margin: 0 auto;
+    display: flex;
+    max-width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    margin-top: 15px;
+    margin-left: 490px;
+    font-weight: 900;
+    
+    
+} 
+nav img{
+    color: red;
+    width: 190px;
+    position: relative;
+    z-index: 19;
+    
+}
+.main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:70vh;
+    padding:20px;
+}
+.sign{
+    width:100%;
+    max-width:420px;
+}
+
+.sign h1,
+.sign p{
+    margin-left:0;
+    text-align:left;
+}
+.email-box{
+    width:100%;
+    max-width:420px;
+    margin:20px auto;
+}
+
+.email-box input,
+.email-box button{
+    width:100%;
+    margin-left:0;
+}
+
+.email-box input::placeholder{
+    color: #b3b3b3;
+}
+
+.email-box input:focus{
+    border: 2px solid white;
+}
+
+
+
+.email-box button:hover{
+    background: #c11119;
+}
+.a p{
+    color: rgb(170, 171, 171);
+    font-weight: 500;
+    text-align: start;
+    margin-left: 920px;
+    margin-top: 60px;
+}
+footer{
+    margin-top: 800px;
+    text-align: center;
+    padding: 25px;
+    background-color: #2e2e2e;
+    color: aliceblue;
+}
+@media(max-width:768px){
+
+.hh{
+    font-size:42px;
+}
+
+.hu,
+.hy{
+    text-align:center;
+    padding:0 15px;
+}
+
+.input{
+    flex-direction:column;
+    align-items:center;
+}
+
+.h,
+.btn{
+    width:100%;
+    max-width:350px;
+}
+
+.papp{
+    flex-direction:column;
+}
+
+.one{
+    width:100%;
+}
+
+.card{
+    width:140px;
+    height:210px;
+}
+
+.number{
+    font-size:65px;
+}
+
+}
